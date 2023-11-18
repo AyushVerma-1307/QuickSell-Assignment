@@ -1,0 +1,56 @@
+.columns-container {
+    margin-top: 20px;
+    background-color: #EBECED;
+    position: relative;
+
+}
+
+.column-item {
+    padding-top: 5px;
+    font-family: 'Inter:wght@100', sans-serif;
+
+}
+
+.column {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 0px;
+    margin: 10px;
+    padding: 0px;
+}
+
+.header-top {
+    width: 290px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.img1 {
+    height: 10px;
+    margin-left: 6px;
+}
+
+.img2 {
+    height: 15px;
+    margin-left: 6px;
+}
+
+.img3 {
+    height: 30px;
+    border-radius: 80px;
+}
+
+.icon2 {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    gap: 5px;
+}
+
+.space {
+    width: 40px;
+}

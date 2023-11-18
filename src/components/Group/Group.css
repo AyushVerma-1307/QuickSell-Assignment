@@ -1,0 +1,116 @@
+.bg-color{
+    background-color: white;
+}
+.group-button{
+    z-index: 10;
+    border: 1px solid gray;
+    box-shadow: 2px 2px silver;
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+    padding: 5px 5px;
+    justify-content: space-evenly;
+}
+
+.group-button:hover {
+    background-color: #f0f0f0;
+  }
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #EBECED;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    padding: 5px;
+    z-index: 1;
+    width: 250px;
+    margin-top: 10px;
+    font-family: 'Inter:wght@400', sans-serif;
+    color: #707070;
+    font-size: 13px;
+    margin-left: 15px;
+    margin-top: -5px;
+}
+
+.dropdown-menu button {
+    /* border: 2px solid rgba(147, 144, 144, 0.5); */
+    
+    margin: 5px 0;
+    padding: 0px 10px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Style when hovering over buttons */
+.dropdown-menu button:hover {
+    background-color: #d0d0d0;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Use space-between to separate items */
+    padding: 5px;
+    
+    /* Add padding for better spacing */
+}
+
+/* Sub-dropdown menu style */
+.sub-dropdown {
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    border-radius: 10px;
+    /* Position to the right of the parent button */
+    background-color:#707070;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    /* Adjust z-index to keep it above the main dropdown */
+    width: 150px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    /* Set the width as needed */
+}
+
+.sub-dropdown button {
+    /* border: 2px solid rgba(147, 144, 144, 0.5); */
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Style when hovering over sub-dropdown buttons */
+.sub-dropdown button:hover {
+    background-color: #d0d0d0;
+}
+
+.display-box{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(147, 144, 144, 0.5);
+    background-color: white;
+}
+.main-button-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    width: 80px;
+    height: 30px;
+}
+
+.main-button-prim img{
+     height: 15px;
+}
+

@@ -1,0 +1,93 @@
+.card {
+  width: 270px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  transition: background-color 0.3s ease;
+  margin: 19px 5px 19px 5px;
+  flex-direction: column;
+  font-family: 'Inter', sans-serif;
+  color: #9B9A97;
+  max-width: 270px;
+}
+
+
+.circle {
+  width: 10px;
+  opacity: 50%;
+  height: 10px;
+}
+
+.profile {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+
+
+.card:hover {
+  background-color: #f0f0f0;
+}
+
+.top-row,
+.middle,
+.bottom-row {
+  display: flex;
+  align-items: center;
+
+}
+
+.item {
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.top-row .item {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-row {
+  display: flex;
+  justify-content: left;
+  font-size: 12px;
+
+}
+
+.middle {
+  justify-content: left;
+  color: #37352F;
+  font-family: 'Inter:wght@100', sans-serif;
+  font-size: 15px;
+
+
+}
+
+.bottom-row {
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 5px;
+  width:250px ;
+  gap: 2px;
+}
+
+.available-icon{
+  display: flex;
+  justify-content: center;
+  padding: 8px 8px 8px 8px;
+
+  width: 30px;
+  border: 1px solid ;
+  border-radius: 7px;
+}
+
+.feature{
+  padding: 3px;
+  border: 1px solid ;
+  border-radius: 7px;
+}

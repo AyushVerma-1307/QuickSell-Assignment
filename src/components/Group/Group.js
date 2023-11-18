@@ -34,7 +34,6 @@ const Group = (props) => {
         setDisplayMenu(!displayMenu);
     };
 
-    // (Rest of the component code remains the same)
     const toggleStatusDropdown = () => {
         setStatusDropdownVisible(!statusDropdownVisible);
         // Hide the priority dropdown when status is clicked
@@ -48,20 +47,23 @@ const Group = (props) => {
     };
 
     const handleChange = (field, action) => {
-        setSelectedGrouping(action); // Update the selected option when an option is clicked
-        setStatusDropdownVisible(false); // Close status dropdown
-        setPriorityDropdownVisible(false); // Close priority dropdown
+        setSelectedGrouping(action);
+        setStatusDropdownVisible(false);
+        setPriorityDropdownVisible(false);
         props.onSelectedValue(field);
     };
 
     const handlePriorityChange = (field, action) => {
-        if (action === "Title") {
-            action = "Title"; // Update the action to represent sorting by title
+        if (action === "Title" && props.tickets) {
+            const sortedTickets = props.tickets
+                .slice()
+                .sort((a, b) => a.title.localeCompare(b.title));
+            // Make a copy of the tickets array using slice() before sorting
+            props.onSortTickets(sortedTickets);
         }
         setSelectedOrdering(action);
-        setStatusDropdownVisible(false); // Close status dropdown
-        setPriorityDropdownVisible(false); // Close priority dropdown
-        props.onOrderingValue(field, action); // Pass the field and action to the parent component
+        setStatusDropdownVisible(false);
+        setPriorityDropdownVisible(false);
     };
 
     return (
@@ -87,7 +89,6 @@ const Group = (props) => {
                         <button onClick={toggleStatusDropdown}>
                             <div className="main-button-cont">
                                 <div className="main-button-text">
-                                    {" "}
                                     {selectedGrouping || "Status"}
                                 </div>
 
@@ -115,7 +116,6 @@ const Group = (props) => {
                                         handleChange("priority", "Priority")
                                     }
                                 >
-                                    {" "}
                                     Priority
                                 </button>
                             </div>
@@ -126,7 +126,6 @@ const Group = (props) => {
                         <button onClick={togglePriorityDropdown}>
                             <div className="main-button-cont">
                                 <div className="main-button-text">
-                                    {" "}
                                     {selectedOrdering || "Priority"}
                                 </div>
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Group from "./components/Group/Group";
-import Column from './components/Column/Column';
+import Column from "./components/Column/Column";
 import "./App.css";
 
 function App() {
